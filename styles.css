@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(1, 1, 29); /* Background color for the whole page */
+    color: rgb(4, 74, 97); /* Font color for the whole page */
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+/* Navigation Bar */
+nav {
+    background: #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #3d3838;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+
+/* Mobile Navigation
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+} */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Sections */
+section {
+    width: 100%; /* Makes the section take the full width */
+    max-width: 1200px; /* Optional: Limits the width for better readability */
+    margin: 0 auto; /* Centers the section horizontally */
+    padding: 20px;
+    background: #fff; /* Keeps the section background white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Experience & Projects */
+.job, .project {
+    border-left: 5px solid #333;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
